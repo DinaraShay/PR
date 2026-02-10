@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="product-list">
+      <h1 class="product-list__title">Dessert</h1>
+      <div class="product-list__items">
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-waffle-desktop.jpg" alt="Waffle">
+            <button class="product-card__btn">
+              <img src="/assets/images/icon-add-to-cart.svg" alt="Add to Cart">Add to Cart
+            </button>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Waffle</span>
+            <h3 class="product-card__title">Waffle with Berries</h3>
+            <span class="product-card__price">$6.50</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-creme-brulee-desktop.jpg" alt="Waffle">
+            <button class="product-card__btn">
+              <img src="/assets/images/icon-add-to-cart.svg" alt="Add to Cart">Add to Cart
+            </button>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Crème Brûlée</span>
+            <h3 class="product-card__title">Vanilla Bean Crème Brûlée</h3>
+            <span class="product-card__price">$7.00</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-macaron-desktop.jpg" alt="Waffle">
+            <button class="product-card__btn">
+              <img src="/assets/images/icon-add-to-cart.svg" alt="Add to Cart">Add to Cart
+            </button>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Macaron</span>
+            <h3 class="product-card__title">Macaron Mix of Five</h3>
+            <span class="product-card__price">$8.00</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-tiramisu-desktop.jpg" alt="Waffle">
+            <div class="product-card__btn product-card__count">
+              <button class="number-minus" type="button"
+                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"><img
+                  src="/assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <input type="number" class="quantity-input" value="1" min="1" max="99">
+              <button class="number-plus" type="button"
+                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><img
+                  src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Tiramisu</span>
+            <h3 class="product-card__title">Classic Tiramisu</h3>
+            <span class="product-card__price">$5.50</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-baklava-desktop.jpg" alt="Waffle">
+            <button class="product-card__btn">
+              <img src="/assets/images/icon-add-to-cart.svg" alt="Add to Cart">Add to Cart
+            </button>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Baklava</span>
+            <h3 class="product-card__title">Pistachio Baklava</h3>
+            <span class="product-card__price">$4.00</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-meringue-desktop.jpg" alt="Waffle">
+            <button class="product-card__btn">
+              <img src="/assets/images/icon-add-to-cart.svg" alt="Add to Cart">Add to Cart
+            </button>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Pie</span>
+            <h3 class="product-card__title">Lemon Meringue Pie</h3>
+            <span class="product-card__price">$5.00</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-cake-desktop.jpg" alt="Waffle">
+            <button class="product-card__btn">
+              <img src="/assets/images/icon-add-to-cart.svg" alt="Add to Cart">Add to Cart
+            </button>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Cake</span>
+            <h3 class="product-card__title">Red Velvet Cake</h3>
+            <span class="product-card__price">$4.50</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-brownie-desktop.jpg" alt="Waffle">
+            <button class="product-card__btn">
+              <img src="/assets/images/icon-add-to-cart.svg" alt="Add to Cart">Add to Cart
+            </button>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Brownie</span>
+            <h3 class="product-card__title">Salted Caramel Brownie</h3>
+            <span class="product-card__price">$5.50</span>
+          </div>
+        </div>
+        <div class="product-list__item">
+          <div class="product-card__image-wrapper">
+            <img class="product-card__image" src="/assets/images/image-panna-cotta-desktop.jpg" alt="Waffle">
+            <div class="product-card__btn product-card__count">
+              <button class="number-minus" type="button"
+                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"><img
+                  src="/assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <input type="number" class="quantity-input" value="2" min="1" max="99">
+              <button class="number-plus" type="button"
+                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><img
+                  src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Panna Cotta</span>
+            <h3 class="product-card__title">Vanilla Panna Cotta</h3>
+            <span class="product-card__price">$6.50</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="cart">
+      <h2 class="cart__title">
+        Your Cart
+        <span class="cart__count">(7)</span>
+      </h2>
+      <div class="cart__items">
+        <div class="cart__item">
+          <span class="cart__item-title">Classic Tiramisu</span>
+          <div class="cart__item-details">
+            <span class="cart__item-quantity">1x</span>
+            <span class="cart__item-price">@ $5.50</span>
+            <span class="cart__item-total">$5.50</span>
+          </div>
+          <button class="cart__item-btn"><img src="/assets/images/icon-remove-item.svg" alt="Remove item"></button>
+        </div>
+        <div class="cart__item">
+          <span class="cart__item-title">Vanilla Bean Crème Brûlée</span>
+          <div class="cart__item-details">
+            <span class="cart__item-quantity">4x</span>
+            <span class="cart__item-price">@ $7.00</span>
+            <span class="cart__item-total">$28.00</span>
+          </div>
+          <button class="cart__item-btn"><img src="/assets/images/icon-remove-item.svg" alt="Remove item"></button>
+        </div>
+        <div class="cart__item">
+          <span class="cart__item-title">Vanilla Panna Cotta</span>
+          <div class="cart__item-details">
+            <span class="cart__item-quantity">2x</span>
+            <span class="cart__item-price">@ $6.50</span>
+            <span class="cart__item-total">$13.00</span>
+          </div>
+          <button class="cart__item-btn"><img src="/assets/images/icon-remove-item.svg" alt="Remove item"></button>
+        </div>
+      </div>
+      <div class="cart__total">
+        <div class="cart__total-info">
+          <span class="cart__total-label">Order Total</span>
+          <span class="cart__total-price">$46.50</span>
+        </div>
+      </div>
+      <div class="cart__info">
+        <img src="/assets/images/icon-carbon-neutral.svg" alt="Carbon-neutral">
+        <p class="cart__info-text">This is <span> carbon-neutral</span> delivery</p>
+      </div>
+      <button class="cart__confirm-btn" data-fancybox data-src="#order-popup">Confirm order</button>
+    </div>
+
+</body>
+<div id="order-popup" class="order-popup" style="display:none;max-width:592px;width: 100%;">
+  <div class="order-popup__header">
+    <img src="/assets/images/icon-order-confirmed.svg" alt="Order Confirmed">
+    <h2 class="order-popup__header-title">Order Confirmed</h2>
+    <p class="order-popup__header-desc">We hope you enjoy your food!</p>
+  </div>
+  <div class="order-popup__footer">
+    <div class="cart__items">
+      <div class="cart__item">
+        <div class="cart__item-col">
+          <img src="/assets/images/image-tiramisu-thumbnail.jpg" alt="Classic Tiramisu">
+          <div class="cart__item-col__item">
+            <span class="cart__item-title">Classic Tiramisu</span>
+            <div class="cart__item-details">
+              <span class="cart__item-quantity">1x</span>
+              <span class="cart__item-price">@ $5.50</span>
+              <span class="cart__item-total">$5.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__item">
+        <div class="cart__item-col">
+          <img src="/assets/images/image-creme-brulee-thumbnail.jpg" alt="Vanilla Bean Crème Brûlée">
+          <div class="cart__item-col__item">
+            <span class="cart__item-title">Vanilla Bean Crème Brûlée</span>
+            <div class="cart__item-details">
+              <span class="cart__item-quantity">4x</span>
+              <span class="cart__item-price">@ $7.00</span>
+              <span class="cart__item-total">$28.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__item">
+        <div class="cart__item-col">
+          <img src="/assets/images/image-panna-cotta-thumbnail.jpg" alt="Vanilla Panna Cotta">
+          <div class="cart__item-col__item">
+            <span class="cart__item-title">Vanilla Panna Cotta</span>
+            <div class="cart__item-details">
+              <span class="cart__item-quantity">2x</span>
+              <span class="cart__item-price">@ $6.50</span>
+              <span class="cart__item-total">$13.00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="cart__total">
+        <div class="cart__total-info">
+          <span class="cart__total-label">Order Total</span>
+          <span class="cart__total-price">$46.50</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="cart__confirm-btn">Start New Order</button>
+  </div>
+</div>
+<footer>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+      closeButton: false,
+      dragToClose: false,
+    });
+  </script>
+</footer>
+
+</html>
