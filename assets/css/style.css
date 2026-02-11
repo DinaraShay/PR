@@ -497,6 +497,10 @@ body {
     border: 1px solid var(--red-color); 
 }
 
+body .fancybox__backdrop {
+	opacity: 70% !important;
+}
+
 @media(max-width:1200px) {
     .product-list__items {
         grid-template-columns: repeat(2, 1fr);
